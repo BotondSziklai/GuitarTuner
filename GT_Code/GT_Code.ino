@@ -32,21 +32,39 @@ void loop()
     lcd.print(frek); //Exact frequency display
   }
 
-  //E
-  if(frek > 270 && frek < 350 ){
+  //E string
+  if(frek > 270 && frek < 360 ){
     if(frek > 323 && frek < 336){
       lcd.setCursor(8,0);
       lcd.print("E-hur");
       lcd.setCursor(3,1);
       lcd.print("Behangolva");
     }
-    else if(frek > 335 && frek < 350){
+    else if(frek > 335 && frek < 360){
       lcd.setCursor(8,0);
       lcd.print("E -");
     }
     else if(frek > 270 && frek < 322){
       lcd.setCursor(8,0);
       lcd.print("E +");
+    }
+  }
+
+//B string 
+  if(frek > 215 && frek < 270 ){
+    if(frek > 240 && frek < 252){
+      lcd.setCursor(8,0);
+      lcd.print("B-hur");
+      lcd.setCursor(3,1);
+      lcd.print("Behangolva");
+    }
+    else if(frek > 251 && frek < 270){
+      lcd.setCursor(8,0);
+      lcd.print("B -");
+    }
+    else if(frek > 215 && frek < 239){
+      lcd.setCursor(8,0);
+      lcd.print("B +");
     }
   }
 
