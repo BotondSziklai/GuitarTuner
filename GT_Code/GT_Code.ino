@@ -1,6 +1,5 @@
 #include <LiquidCrystal.h>
 
-
 //Creating variables
 #define SOR 2
 #define OSZLOP 16
@@ -16,7 +15,6 @@ void setup(){
   lcd.print("Made by Sz. B.");
   delay(1000);
   lcd.clear(); //Clear display
- 
 }
 
 //Running Code
